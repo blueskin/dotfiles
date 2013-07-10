@@ -1,0 +1,17 @@
+set mbox_type=Maildir
+set folder="~/Maildir"
+
+set folder="~/Maildir"
+set mask="!^\\.[^.]"
+set mbox="~/Maildir"
+set record="+.Sent"
+set postponed="+.Drafts"
+set spoolfile="~/Maildir"
+
+mailboxes `echo -n "+ "; find ~/Maildir -maxdepth 1 -type d -name ".*" -printf "+'%f' "`
+
+set pager_stop=yes	#don't autoscroll through messages
+set record= "~/Maildir/sent" # where to save sent messages
+set copy= yes # actually save sent messages
+
+macro pager d '<delete-message><exit>'

@@ -1,0 +1,8 @@
+:set formatoptions-=ro
+:set noautoindent
+autocmd BufNewFile,BufRead * setlocal formatoptions-=ro
+set pastetoggle=<F9>
+
+:set smartcase
+
+"http://vim.wikia.com/wiki/Backing_up_and_commenting_vimrc
