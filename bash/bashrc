@@ -9,3 +9,4 @@ fi
 EDITOR=vim
 alias grep="grep --color"
 alias showvars="set | grep "^\([[:alnum:]]\|[[:punct:]]\)\+=""
+alias cmsg="curl -s http://whatthecommit.com/index.txt"
