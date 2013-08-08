@@ -14,4 +14,4 @@ set pager_stop=yes	#don't autoscroll through messages
 set record= "~/Maildir/sent" # where to save sent messages
 set copy= yes # actually save sent messages
 
-macro pager d '<delete-message><exit>'
+macro pager d <exit><delete-message> "delete current message and exit to index"
